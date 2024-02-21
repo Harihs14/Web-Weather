@@ -1,5 +1,3 @@
-// script.js
-
 function searchWeather() {
     const locationInput = document.getElementById('locationInputOverlay');
     const cityName = locationInput.value;
@@ -24,21 +22,18 @@ function displayWeatherInfo(weatherData, cityName) {
     const weatherInfo = document.getElementById('weatherInfo');
 
     if (weatherData.cod === '404') {
-        // Handle case when city is not found
         weatherCity.textContent = 'City not found';
         weatherDescription.textContent = '';
         weatherInfo.textContent = '';
     } else {
         const description = weatherData.weather[0].description;
-        const temperatureKelvin = weatherData.main.temp; // Temperature in Kelvin
-        const temperatureCelsius = temperatureKelvin - 273.15; // Convert Kelvin to Celsius
+        const temperatureKelvin = weatherData.main.temp;
+        const temperatureCelsius = temperatureKelvin - 273.15;
         const humidity = weatherData.main.humidity;
 
         weatherCity.textContent = `Weather in ${cityName}`;
         weatherDescription.textContent = `Current conditions: ${description}`;
         weatherInfo.innerHTML = `Temperature: ${temperatureCelsius.toFixed(2)}°C<br>Humidity: ${humidity}%`;
-
-        // Show pop-up (modal)
         showPopup(cityName);
     }
 }
