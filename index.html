@@ -1,0 +1,38 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Temperature</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/7911203/weather-icon-md.png" alt="logo">
+            <span class="web-weather-text">WEB WEATHER</span>
+        </div>
+    </header>
+    <section class="video-section">
+        <video autoplay muted loop id="bgVideo">
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <div class="acrylic-glass-search">
+                <h1 id="weatherCity">Discover the Weather</h1>
+                <p id="weatherDescription">Explore accurate and up-to-date weather information for any location.</p>
+                <input type="text" placeholder="Search location..." id="locationInputOverlay">
+                <button type="button" onclick="searchWeather()">Search</button>
+                <div id="weatherInfo"></div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
