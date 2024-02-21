@@ -1,9 +1,7 @@
-/* styles.css */
-
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden; /* Hide scrollbars */
+    overflow: hidden;
 }
 
 header {
@@ -49,7 +47,7 @@ header {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden; /* Ensure the video doesn't overflow */
+    overflow: hidden;
 }
 
 #bgVideo {
@@ -84,7 +82,7 @@ header {
     border-radius: 20px;
     padding: 40px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Box shadow for acrylic glass effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
@@ -105,10 +103,6 @@ header {
     color: rgb(184, 198, 255);
     font-size: 18px;
 }
-
-/* styles.css */
-
-/* ... (previous styles) */
 
 .popup {
     display: flex;
