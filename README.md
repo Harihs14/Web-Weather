@@ -17,6 +17,7 @@ How to Use:
 Clone the repository to your local machine.
 Open index.html in your web browser.
 Feel free to explore the code and customize the application according to your preferences.
+Add the background file for the page.
 
 Author:
 
